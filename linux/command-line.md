@@ -65,3 +65,18 @@ ls
 ```
 pwd
 ```
+- To move to folder 
+
+```
+cd
+```
+- To get back to previous folder
+
+```
+cd ..
+```
+- To read file called name.txt
+
+```
+cat name.txt
+```
