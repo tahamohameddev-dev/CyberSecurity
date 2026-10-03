@@ -109,7 +109,7 @@ rm -r tom
 - Relative path :
 It is current path and you don't need to discribe the full path 
 
-
+------------------------------
 
 - copies files and folders.
 ```
