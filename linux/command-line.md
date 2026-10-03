@@ -90,10 +90,13 @@ nano name.txt
 rm name.txt
 
 - To create new folder called tom
+
 ```
 mkdir tom
 ```
+
 - To remove the folder tom 
+
 ```
 rm -r tom
 ```
