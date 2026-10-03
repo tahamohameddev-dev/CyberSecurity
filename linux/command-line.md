@@ -102,7 +102,7 @@ mkdir tom
 rm -r tom
 ```
 
-#### Ther are tow types of paths :
+- Ther are tow types of paths :
 
 - absolute path starts with /
 - Ex: `/home/name/downloads/
