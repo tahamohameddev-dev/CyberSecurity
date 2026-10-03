@@ -113,7 +113,7 @@ It is current path and you don't need to discribe the full path
 ------------------------------
 
 - copies files and folders.
-```
+```bash
 cp file.txt backup.txt
 cp file.txt /home/user/Documents/
 ```
@@ -122,8 +122,20 @@ cp file.txt /home/user/Documents/
 
 - `mv` moves files and folders from one place to another.
 
-```
+```bash
 mv file.txt /home/user/Documents/
 mv oldname.txt newname.txt
 mv myfolder/ /home/user/Documents/
+```
+
+--------------------------------
+
+### Defference between write and append
+- To write is to add new content to file but deletes the old content
+- To append is to add new content without deleting old content
+
+```bash
+echo "hello" > file.txt
+echo "world" >> file.txt
+cat file.txt
 ```
