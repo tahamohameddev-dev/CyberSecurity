@@ -80,3 +80,20 @@ cd ..
 ```
 cat name.txt
 ```
+- then write then CTRL+X then Y 
+```
+nano name.txt
+```
+
+- To remove file called name.txt
+```
+rm name.txt
+
+- To create new folder called tom
+```
+mkdir tom
+```
+- To remove the folder tom 
+```
+rm -r tom
+```
