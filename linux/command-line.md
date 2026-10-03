@@ -32,7 +32,7 @@
 - `sudo apt upgrade`
 - apt is used to install new applications in linux
 
-## update & upgrade
+### update & upgrade
 
 - `update` downloads the list of the newest software version.
 
@@ -50,4 +50,15 @@ sudo apt upgrade
 - (when you see (premission denised)) use :
 
 - `sudo`
+
+### some command 
+
+- To see the current user
+- `whoami`
+
+- To see files on same directory or folder
+- `ls`
+
+-To see the current folder 
+- `pwd`
 
