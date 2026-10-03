@@ -100,6 +100,7 @@ mkdir tom
 
 ```
 rm -r tom
+rm -r /home/kali/name
 ```
 
 - Ther are tow types of paths :
@@ -113,5 +114,16 @@ It is current path and you don't need to discribe the full path
 
 - copies files and folders.
 ```
-cp
+cp file.txt backup.txt
+cp file.txt /home/user/Documents/
+```
+
+--------------------------------
+
+- `mv` moves files and folders from one place to another.
+
+```
+mv file.txt /home/user/Documents/
+mv oldname.txt newname.txt
+mv myfolder/ /home/user/Documents/
 ```
