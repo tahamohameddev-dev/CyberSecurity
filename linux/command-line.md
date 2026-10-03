@@ -101,3 +101,15 @@ mkdir tom
 ```
 rm -r tom
 ```
+
+#### Ther are tow types of paths :
+
+- absolute path starts with /
+- Ex: `/home/name/downloads/
+- Relative path :
+It is current path and you don't need to discribe the full path 
+
+- copies files and folders.
+```
+cp
+```
