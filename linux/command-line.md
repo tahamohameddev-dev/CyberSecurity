@@ -43,3 +43,11 @@ sudo apt update
 sudo apt upgrade
 ```
 
+### sudo
+
+- sudo means super user or (high privileges)
+
+- (when you see (premission denised)) use :
+
+- `sudo`
+
