@@ -1,6 +1,6 @@
 # Linux
 
-- Linux  is Open Sorce Operating system that can be modified by you
+- Linux  is Open Sorce Operating system that can be modified by you.
 
 - Anyone can addn, remove code in linux.
 
@@ -26,8 +26,20 @@
 
 # Command Line
 
-## update & upgrate
+### After installing the system open treminal and update it by:
 
+- `sudo apt update` 
+- `sudo apt upgrade`
+- apt is used to install new applications in linux
+
+## update & upgrade
+
+- `update` downloads the list of the newest software version.
+
+- `upgrade` install the newer versions of the software on yor system.
 ```
 sudo apt update
+
+sudo apt upgrade
 ```
+
