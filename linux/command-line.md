@@ -48,17 +48,20 @@ sudo apt upgrade
 - sudo means super user or (high privileges)
 
 - (when you see (premission denised)) use :
-
-- `sudo`
-
+```
+sudo
+```
 ### some command 
 
 - To see the current user
-- `whoami`
-
+```
+whoami
+```
 - To see files on same directory or folder
-- `ls`
-
--To see the current folder 
-- `pwd`
-
+```
+ls
+```
+- To see the current folder 
+```
+pwd
+```
