@@ -86,9 +86,10 @@ nano name.txt
 ```
 
 - To remove file called name.txt
+
 ```
 rm name.txt
-
+```
 - To create new folder called tom
 
 ```
