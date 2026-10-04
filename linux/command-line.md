@@ -148,6 +148,7 @@ ifconfig
 ```
 
 ![ifconfig output](images/ifconfig.png)
+-------------------------------------
 
 - To get information about memory space
 
