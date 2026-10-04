@@ -197,8 +197,10 @@ r
 - If you need read & write then 4+2 = 6
 
 - To change the permissions for a file xyz.txt 
-`chmod 777 xyz.txt`
-
+```bash
+chmod 777 xyz.txt
+```
 - To add execute permission to a file xyz.txt 
-`chmod +x xyz.txt`
-
+```bash
+chmod +x xyz.txt
+```
