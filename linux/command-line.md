@@ -106,7 +106,7 @@ rm -r /home/kali/name
 - Ther are tow types of paths :
 
 - absolute path starts with /
-- Ex: `/home/name/downloads/
+- Ex: /home/name/downloads/
 - Relative path :
 It is current path and you don't need to discribe the full path 
 
