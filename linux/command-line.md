@@ -154,6 +154,7 @@ ifconfig
 ```bash
 free
 ```
+![free output](images/free.png)
 - To get information about hard disk
 
 ```bash
