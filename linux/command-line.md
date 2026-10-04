@@ -185,3 +185,12 @@ kill PID
 
 ----------------------------------
 
+- Permissions for files are (read write execute ).
+
+- Execute => 1 =>
+x
+- Write =>
+2 => W
+- Read => 4 =>
+r
+- If you need read & write then 4+2 = 6
