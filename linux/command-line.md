@@ -160,4 +160,27 @@ free
 ```bash
 df -h
 ```
+- To information about %CPU
 
+```bash
+ps aux
+```
+
+- To kill a process
+
+```bash
+kill PID
+```
+
+------------------------------------
+
+- There are many ways to install applications in linux.
+
+- First: use # `apt install <application>`
+- Second: use # `snap install <application>`
+
+- Third use # `dpkg -i <application.deb>`
+
+![install application](images/install.png)
+
+------------------------------------
