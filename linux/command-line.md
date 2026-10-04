@@ -147,6 +147,8 @@ cat file.txt
 ifconfig
 ```
 
+![ifconfig output](images/ifconfig.png)
+
 - To get information about memory space
 
 ```bash
@@ -157,3 +159,4 @@ free
 ```bash
 df -h
 ```
+
