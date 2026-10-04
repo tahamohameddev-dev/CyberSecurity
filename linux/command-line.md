@@ -139,3 +139,21 @@ echo "hello" > file.txt
 echo "world" >> file.txt
 cat file.txt
 ```
+----------------------------
+
+- To get informaton about network
+
+```bash
+ifconfig
+```
+
+- To get information about memory space
+
+```bash
+free
+```
+- To get information about hard disk
+
+```bash
+df -h
+```
