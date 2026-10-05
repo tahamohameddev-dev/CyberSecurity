@@ -221,7 +221,7 @@ chmod +x xyz.txt
 
  #### comand line 
 
- - comand line is create file and folder
+ - comand line is create file and folder `la -lsh`
 
  ```bash
  la -lah
