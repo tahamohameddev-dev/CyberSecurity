@@ -219,12 +219,74 @@ chmod +x xyz.txt
 
  -----------------------------------
 
- #### comand line 
 
- - comand line is create file and folder `la -lsh`
+# find
 
- ```bash
- la -lah
- ```
+- `find` searches for files and folders inside a given path.
 
- --------------------
+- Syntax: `find <path> <options>`
+
+## Basic search
+
+```bash
+find / -name "config.php"
+find / -iname "config.php"      # ignore case
+```
+
+## By type
+
+```bash
+find / -type f -name "*.txt"    # files only
+find / -type d -name "backup"   # folders only
+```
+
+## By permission (privilege escalation)
+
+```bash
+find / -perm -4000 2>/dev/null
+```
+
+## By owner
+
+```bash
+find / -user root
+```
+
+## By size
+
+```bash
+find / -size +100M      # bigger than 100MB
+find / -size -10k       # smaller than 10KB
+```
+
+## By modified time
+
+```bash
+find / -mmin -10        # modified in the last 10 minutes
+```
+
+## Run a command on results
+
+```bash
+find / -name "*.log" -exec cat {} \;
+```
+
+## Combine conditions
+
+```bash
+find / -type f -size +100M -name "*.log" 2>/dev/null   # AND (default)
+find / -type f \( -name "*.txt" -o -name "*.log" \)      # OR
+find / -type f ! -name "*.log"                           # NOT
+```
+
+## Save results
+
+```bash
+find / -name "*.conf" > results.txt       # write
+find / -name "*.log" >> results.txt       # append
+find / -name "*.conf" | tee results.txt   # save + show on screen
+```
+
+---
+
+**Always add `2>/dev/null` when searching from `/`** to hide "Permission denied" errors.
