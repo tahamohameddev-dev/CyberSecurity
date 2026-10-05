@@ -10,16 +10,16 @@
 - Example: # nano name.sh
 
 ```bash
-/#!/bin/bash
+#!/bin/bash
 
 ls
 
 echo "this is red nexus"
 ```
 then save file as CTRL+X then Y
-
-`# bash name.sh`
-
+```bash
+bash name.sh
+```
 ---------------------------------
 
 #### To print "name tom"
@@ -29,4 +29,18 @@ then save file as CTRL+X then Y
 
 name="tom adam"
 echo $name
+```
+- Save then
+```bash
+bash name.sh
+```
+
+-----------------------------------
+#### To read a file in location /home/name.txt
+
+```bash
+#!/bin/bash
+
+file="/home/name.txt"
+cat $file
 ```
