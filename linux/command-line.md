@@ -204,3 +204,27 @@ chmod 777 xyz.txt
 ```bash
 chmod +x xyz.txt
 ```
+-------------------------------
+
+- To redirect the output to another command use
+|
+- To get the word hossam from file called xyz.txt
+```bash
+ cat xyz.txt | grep "hossam"
+```
+- To know the number of lines in file xyz.txt
+```bash
+ cat xyz.txt | wc
+ ```
+
+ -----------------------------------
+
+ ## comand line 
+
+ - comand line is create file and folder
+
+ ```bash
+ la -lah
+ ```
+
+ --------------------
