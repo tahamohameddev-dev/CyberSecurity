@@ -19,3 +19,14 @@ echo "this is red nexus"
 then save file as CTRL+X then Y
 
 `# bash name.sh`
+
+---------------------------------
+
+#### To print "name tom"
+
+```bash
+#!/bin/bash
+
+name="tom adam"
+echo $name
+```
