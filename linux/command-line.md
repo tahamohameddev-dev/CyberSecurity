@@ -219,7 +219,7 @@ chmod +x xyz.txt
 
  -----------------------------------
 
- ## comand line 
+ #### comand line 
 
  - comand line is create file and folder
 
