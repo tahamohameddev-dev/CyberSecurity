@@ -100,3 +100,85 @@ echo "hello world i am tom" | sed 's/hello/hi/;s/tom/toom/'
 sed 's/name1/name2/g' < name.txt
 ```
 
+```bash 
+sed -i 's/name1/name2/g' name_file.txt
+```
+- Delete Flage 
+
+```bash
+sed '/name/name2/d' name_file
+```
+
+---------------------------------------------
+
+### Assigning Values to Variables
+
+#### 1. Direct Assignment
+
+```bash
+VAR=value
+```
+
+- **No spaces** around `=`
+- With spaces, the shell treats it as a command, not an assignment
+
+```bash
+VAR = value    # Incorrect! interpreted as a command
+```
+
+#### Example
+
+```bash
+count=5
+echo "count: $count"
+```
+
+- Use `$` to read the variable's value
+
+#### Tip: Use quotes for clarity
+
+```bash
+echo "It's a good day today"
+echo "hello \ - backslash and a dash"
+```
+
+---------------------------------------------
+
+### Using read to Assing Values
+
+```bash
+read VAR
+```
+- Example:
+
+```bash
+echo "Enter your name:"
+read name
+echo "name: $name"
+```
+- Prompt lnline with -p:
+
+```bash
+read -p "Enter your age: " age
+echo "Age: $age
+```
+
+- Silent input with `-s` (e.g.,for password):
+
+```bash
+read -sp "Enter your password: " password
+echo "The Paswword is : @password"
+```
+### Reading from file:
+
+```bash
+read name < /etc/hostname
+```
+
+-----------------------------------------
+
+### Pereferred Method: `$(pwd)` (modern and easier to nets.)
+
+```bash
+echo "current directory: $current_directory"
+```
