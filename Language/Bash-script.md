@@ -183,3 +183,78 @@ read name < /etc/hostname
 current_directory=`pwd`
 echo "current directory: $current_directory"
 ```
+
+---------------------------------------------
+
+### Measuring Script Execution Time
+
+#### Combining Commands and Variables
+
+```bash
+start=$(date +%s)
+sleep 3                      # Simulates a delay
+end=$(date +%s)
+diff=$((end - start))
+echo "Time elapsed: $diff seconds"
+```
+
+#### Key Concepts
+
+- `$(( ... ))` : performs arithmetic operations
+- `start` and `end` : store timestamps
+- `$(date +%s)` : current time in seconds (since 1970)
+- `diff = end - start` : the time elapsed
+
+---------------------------------------------
+
+### Check for Given Argument (Script Example)
+
+#### The Code
+
+```bash
+#!/bin/bash
+
+# Check for given argument
+if [ $# -eq 0 ]
+then
+    echo -e "You need to specify the target domain.\n"
+    echo -e "Usage:"
+    echo -e "\t$0 <domain>"
+    exit 1
+else
+    domain=$1
+fi
+```
+
+#### What It Does
+
+- If the number of given arguments equals 0:
+  - Print: "You need to specify the target domain."
+  - Print an empty line
+  - Print: "Usage:"
+  - Print: `<name of the script> <domain>`
+  - Exit the script with an error
+- Else: the `domain` variable is an alias for the given argument
+- `fi` : finish the if-condition
+
+#### Summary of Components
+
+- `#!/bin/bash` : Shebang
+- `if-else-fi` : Conditional execution
+- `echo` : Prints specific output
+- `$#` / `$0` / `$1` : Special variables
+- `domain` : Variable
+
+#### Special Variables
+
+- `$#` : number of arguments
+- `$0` : name of the script
+- `$1` : first argument
+
+#### Flags Used
+
+- `-eq` : equals (numeric comparison)
+- `echo -e` : enable escape characters (`\n` new line, `\t` tab)
+- `exit 1` : exit with an error (0 = success)
+
+---------------------------------------------
