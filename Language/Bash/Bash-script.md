@@ -292,3 +292,32 @@ greet Taha    # Hello Taha
 - Arguments inside the function: `$1`, `$2`, ... (same as scripts)
 
 ---------------------------------------------
+
+### Return (Exit) Codes
+
+| Return Code | Description |
+|---|---|
+| `0` | Success |
+| `1` | General errors |
+| `2` | Misuse of shell builtins |
+| `126` | Command invoked cannot execute |
+| `127` | Command not found |
+| `128` | Invalid argument to exit |
+| `128+n` | Fatal error signal "n" |
+| `130` | Script terminated by Control-C |
+| `255\*` | Exit status out of range |
+
+#### Check the Last Exit Code
+
+```bash
+ls /etc
+echo $?        # 0 (success)
+
+ls /nothing
+echo $?        # 2 (error)
+```
+
+- `$?` : exit code of the last command
+- `0` = success, anything else = failure
+
+---------------------------------------------
