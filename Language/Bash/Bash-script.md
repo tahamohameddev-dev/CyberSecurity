@@ -320,4 +320,4 @@ echo $?        # 2 (error)
 - `$?` : exit code of the last command
 - `0` = success, anything else = failure
 
----------------------------------------------
+-------------------------------------------
