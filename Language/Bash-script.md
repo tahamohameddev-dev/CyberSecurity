@@ -180,5 +180,6 @@ read name < /etc/hostname
 ### Pereferred Method: `$(pwd)` (modern and easier to nets.)
 
 ```bash
+current_directory=`pwd`
 echo "current directory: $current_directory"
 ```
