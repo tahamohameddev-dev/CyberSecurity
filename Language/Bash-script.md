@@ -258,3 +258,37 @@ fi
 - `exit 1` : exit with an error (0 = success)
 
 ---------------------------------------------
+
+### Functions in Bash
+
+#### Method 1
+
+```bash
+function name {
+    <commands>
+}
+```
+
+#### Method 2
+
+```bash
+name() {
+    <commands>
+}
+```
+
+#### Example
+
+```bash
+greet() {
+    echo "Hello $1"
+}
+
+greet Taha    # Hello Taha
+```
+
+- Define the function **before** calling it
+- Call it by its name only (no parentheses)
+- Arguments inside the function: `$1`, `$2`, ... (same as scripts)
+
+---------------------------------------------
