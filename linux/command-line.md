@@ -290,3 +290,49 @@ find / -name "*.conf" | tee results.txt   # save + show on screen
 ---
 
 **Always add `2>/dev/null` when searching from `/`** to hide "Permission denied" errors.
+
+---------------------------------------------
+
+### zip / unzip
+
+#### Create a zip
+
+```bash
+zip file.zip file1.txt file2.txt     # zip specific files
+zip -r folder.zip folder/            # zip a folder (-r = recursive)
+```
+
+#### Extract a zip
+
+```bash
+unzip file.zip                       # extract in current directory
+unzip file.zip -d /path/to/folder    # extract into a specific folder
+```
+
+#### View / Test
+
+```bash
+unzip -l file.zip                    # list contents without extracting
+unzip -t file.zip                    # test the archive for errors
+```
+
+#### Useful Flags
+
+```bash
+zip -e file.zip file.txt             # encrypt with a password
+zip -r -9 folder.zip folder/         # max compression (-1 fastest, -9 best)
+zip -r folder.zip folder/ -x "*.log" # exclude files
+```
+
+- `-r` : recursive (required for folders)
+- `-d` : destination directory (unzip)
+- `-l` : list contents
+- `-e` : encrypt with a password
+
+#### Install (if missing)
+
+```bash
+sudo apt install zip unzip
+```
+
+---------------------------------------------
